@@ -2,7 +2,14 @@
     font-size: 32px;
     line-height: 44px;
     text-align: center;
-    letter-spacing: 0.2px;
+	letter-spacing: 0.2px;
+	@media(max-width: 860px){
+		font-size: 24px;
+	}
+	@media(max-width: 500px){
+		font-size: 20px;
+		line-height: 32px;
+	}
 }
 
 .content-subtitle{
@@ -12,4 +19,13 @@
     letter-spacing: 0.67px;
     text-transform: uppercase;
     color: #637381;
+}
+
+.btn {
+	display: inline-block;
+	background: #007A5C;
+	text-align: center;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
 }
