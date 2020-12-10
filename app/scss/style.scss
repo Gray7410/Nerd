@@ -1,0 +1,177 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #023135;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: #023135;
+}
+
+.header{
+    background-color: #FFF7EF;
+    background-image: url(../img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__video{
+        padding-top: 32px;
+    }
+    &__title{
+        max-width: 531px;
+        font-size: 50px;
+        line-height: 64px;
+        letter-spacing: 0.31px;
+        margin-top: 69px;
+    }
+    &__subtitle{
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        margin-top: 21px;
+        margin-bottom: 60px;
+    }
+    &__btn{
+        display: inline-block;
+        min-width: 200px;
+        height: 60px;
+        background: #007A5C;
+        border-radius: 30px;
+        text-align: center;
+        padding: 18px 37px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #fff;
+        line-height: 24px;
+        letter-spacing: 0.15px;        
+    }
+}
+
+.inner{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.navigation{
+    height: 50px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    &__list{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item{
+        padding-left: 48px;
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+    
+    &__link{
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+    }
+}
+
+.tutors{
+    &__subtitle{
+        font-size: 10px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.67px;
+        text-transform: uppercase;
+        color: #637381;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: inline-block;
+        border: 1px solid #007A5C;
+        box-sizing: border-box;
+        border-radius: 24px;
+        box-sizing: border-box;
+    }
+    &__link{
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        color: #007A5C;
+        padding: 8px 15px;
+        &:hover{
+            background-color: #007A5C;
+            color: #fff;
+            border-radius: 24px;
+            box-sizing: border-box;
+            transition: background .3s linear, color .3s ease ;
+        }
+    }
+}
+
+.guide{
+    &__title{
+        padding-top: 29px;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-bottom: 84px;
+    }
+    &__bg{
+        background-image: url(../img/guide-bg.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+        min-height: 759px;
+        }
+    &__step--1{
+        display: block;
+        width: 260px;
+        border: 1px solid #EBF4FF;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 7px rgba(222, 234, 249, 0.59);
+        border-radius: 24px;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        padding: 16px 21px 45px 22px;
+        text-align: center;
+    }
+}
+
+.step-number{
+    color: #fff;
+    display: inline-block;
+    background: #32404D;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 11px 15px 9px;
+    margin-bottom: 24px;
+}
+
+
+@import "media";
